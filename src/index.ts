@@ -45,7 +45,7 @@ app.listen(PORT, () => {
 	for(let counter = 0; counter < 3; counter++){
 		let name = readline.question('\nNome do aluno: ')
 		let age = parseInt(readline.question('Idade do aluno: '))
-		let note = parseInt(readline.question('Nota do aluno: '))
+		let note = parseFloat(readline.question('Nota do aluno: '))
 		
 		students.push({
 			id: counter,
@@ -62,5 +62,5 @@ app.listen(PORT, () => {
 	
 	console.log(`\nAlunos: ${students_name}`)
 	console.log(`\nSoma da nota dos alunos: ${sum_note}`)
-	
+
 });
